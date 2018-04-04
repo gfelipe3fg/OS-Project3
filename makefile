@@ -1,5 +1,5 @@
 rwlock: locks.o main.o
-	gcc -o rwlock locks.o main.o -lpthread -lrt
+	gcc -o rwlock locks.o main.o
 
 main.o: main.c simulator.h
 	gcc main.c -lpthread -lrt
